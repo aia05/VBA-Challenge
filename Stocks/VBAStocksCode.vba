@@ -56,11 +56,11 @@ Sub Stocks()
                         .Font.Color = vbGreen
                     End With
                 Else
-                    With ws.Cells(row_count, 10)  
+                    With ws.Cells(rowCount, 10)  
                         .Interior.ColorIndex = 3
                         .Font.Color = vbRed
                     End With
-                    With ws.Cells(row_count, 11) 
+                    With ws.Cells(rowCount, 11) 
                         .Interior.ColorIndex = 3
                         .Font.Color = vbRed
                     End With
@@ -76,7 +76,7 @@ Sub Stocks()
                     End With
                 End If
 
-                row_count = row_count + 1
+                rowCount = rowCount + 1
 
                 totalVolume = 0
                 startPrice = 0
