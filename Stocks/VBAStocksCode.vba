@@ -44,7 +44,7 @@ Sub Stocks()
                 endPrice = ws.Cells(i, 6).Value
 
                 yearlyChange = endPrice - startPrice
-                ws.Cells(row_count, 10).Value = yearly_change
+                ws.Cells(rowCount, 10).Value = yearlyChange
 
                 If yearlyChange >= 0 Then
                     With ws.Cells(rowCount, 10)  
