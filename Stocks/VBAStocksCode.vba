@@ -4,7 +4,6 @@ Sub Stocks()
 
     For Each ws In Worksheets
 
-        'Create column labels for the summary table
         ws.Range("I1").Value = "Ticker"
         ws.Range("J1").Value = "Yearly Change"
         ws.Range("K1").Value = "Percent Change"
@@ -47,22 +46,21 @@ Sub Stocks()
                 ws.Cells(rowCount, 10).Value = yearlyChange
 
                 If yearlyChange >= 0 Then
-                    With ws.Cells(rowCount, 10)  
+                    With ws.Cells(rowCount, 10)
                         .Interior.ColorIndex = 4
-                        .Font.Color = vbGreen
+                   
                     End With
-                    With ws.Cells(rowCount, 11) 
+                    With ws.Cells(rowCount, 11)
                         .Interior.ColorIndex = 4
-                        .Font.Color = vbGreen
+                  
                     End With
                 Else
-                    With ws.Cells(rowCount, 10)  
+                    With ws.Cells(rowCount, 10)
                         .Interior.ColorIndex = 3
-                        .Font.Color = vbRed
+                   
                     End With
-                    With ws.Cells(rowCount, 11) 
+                    With ws.Cells(rowCount, 11)
                         .Interior.ColorIndex = 3
-                        .Font.Color = vbRed
                     End With
                 End If
 
@@ -151,3 +149,4 @@ Sub Stocks()
     Next ws
 
 End Sub
+
